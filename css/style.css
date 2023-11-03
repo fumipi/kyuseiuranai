@@ -1,0 +1,191 @@
+html {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    margin: 100px 0 60px 0;
+}
+
+h1::before, h1::after {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/hakke.jpeg);
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 30px;
+    line-height: 1.2;
+}
+
+form{
+    margin: 0 0 120px;
+}
+
+.age-input{
+    display:flex;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+
+.age-input p{
+    font-size: 24px;
+    margin: 16px 0 0;
+}
+
+input[type="text"]{
+    width: 100px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 250px;
+    height:50px;
+    border-radius: 4px;
+    border: none;
+    background-color: darkslateblue;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+#crystal-ball{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    margin: 0 auto;
+    background-color:#fff;
+    }
+
+.crystal-ball-flare {
+    animation: grow 3.5s ease-in-out, pulse 2s infinite ease-in-out 3.5s;
+}
+
+.crystal-ball-flare-1 {
+    --color-middle: darkturquoise;
+    --color-outer: pink;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-2 {
+    --color-middle: orange;
+    --color-outer: yellow;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-3 {
+    --color-middle: blue;
+    --color-outer: lightseagreen;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-4 {
+    --color-middle: green;
+    --color-outer: greenyellow;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-5 {
+    --color-middle: orange;
+    --color-outer: yellow;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-6 {
+    --color-middle: darkcyan;
+    --color-outer: turquoise;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-7 {
+    --color-middle: red;
+    --color-outer: indianred;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-8 {
+    --color-middle: slategray;
+    --color-outer: silver;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+.crystal-ball-flare-9 {
+    --color-middle: #b400ff;
+    --color-outer: #ff00d4;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px var(--color-middle), 0 0 140px 90px var(--color-outer);
+}
+
+@keyframes grow {
+    0% { background-color: white; opacity: 0%;}
+    60% { background-color: rgb(241, 237, 197); opacity: 30%; }
+    80% { background-color: rgb(226, 247, 247); opacity: 50%;}
+    100% { background-color: white; opacity: 100%;}
+}
+
+@keyframes pulse {
+    0% { 
+        box-shadow: 0 0 50px 25px #fff, 
+                    0 0 90px 55px var(--color-middle), 
+                    0 0 130px 85px var(--color-outer); 
+    }
+    50% { 
+        box-shadow: 0 0 70px 35px #fff, 
+                    0 0 110px 65px var(--color-middle), 
+                    0 0 150px 95px var(--color-outer); 
+    }
+    100% { 
+        box-shadow: 0 0 50px 25px #fff, 
+                    0 0 90px 55px var(--color-middle), 
+                    0 0 130px 85px var(--color-outer); 
+    }
+}
+
+#results{
+    padding:120px 16px 0px;
+    margin: 0 auto;
+    width: 600px;
+    line-height: 1.2;
+}
+
+#results p {
+    text-align: left;
+}
+
+
+#result1{
+    display:none;
+    margin: 0 0 30px;
+}
+
+#result2{
+    display:none;
+}
+
+
